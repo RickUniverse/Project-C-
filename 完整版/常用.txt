@@ -1,0 +1,32 @@
+//单行单列
+string sql = "select count(*) from UserExpressXinXI where QianShou = 2";
+                int lingshi_2 = Convert.ToInt32(db.GetOne(sql));
+                if(lingshi_2 > 0)
+                {
+
+                }
+//插入
+string sql = string.Format("insert UserExpressXinXI values()", );
+           int lingshi = db.JiRu(sql);
+            if (lingshi > 0)
+            {
+}
+//修改
+string sql4 = string.Format("update staff set kuaidijian = {0} where staffno = '{1}'", lingshi, tex_kuaidiyuan.Text);
+                int enq = db.JiRu(sql4);
+                if(enq == 1)
+                {
+                    return false;
+                }
+//查询
+string sql = string.Format("select * from UserExpressXinXI where Odd = {0}", tex_shurudanhao.Text);
+            SqlDataReader sdr = db.GetSet(sql);
+            sdr.Read();
+//删除
+string lingshistr1 = string.Format("delete from UserExpressXinXI where odd = {0}", int.Parse(tex_shurudanhao.Text));
+                        int lingshi1 = db.JiRu(lingshistr1);
+                        if (lingshi1 > 0)
+                        {
+                            QingKongChaXun();
+                            MessageBox.Show("已删除快递单：" + mess, "提示");
+                        }

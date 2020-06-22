@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82F08FC0-BC6A-4059-AEB4-0340883B68E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XiYiDian</RootNamespace>
+    <AssemblyName>XiYiDian</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Frm_gongziguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_gongziguanli.Designer.cs">
+      <DependentUpon>Frm_gongziguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_HuiShengJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HuiShengJi.Designer.cs">
+      <DependentUpon>Frm_HuiShengJi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_HuiYuanTuiKuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HuiYuanTuiKuan.Designer.cs">
+      <DependentUpon>Frm_HuiYuanTuiKuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SuoPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SuoPing.Designer.cs">
+      <DependentUpon>Frm_SuoPing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_tianjiayuangong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_tianjiayuangong.Designer.cs">
+      <DependentUpon>Frm_tianjiayuangong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TongJi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TongJi.Designer.cs">
+      <DependentUpon>Frm_TongJi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_yuangongguanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_yuangongguanli.Designer.cs">
+      <DependentUpon>Frm_yuangongguanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_XiuGaiHui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_XiuGaiHui.Designer.cs">
+      <DependentUpon>Frm_XiuGaiHui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_CeXiaoShanChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_CeXiaoShanChu.Designer.cs">
+      <DependentUpon>Frm_CeXiaoShanChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_ShangGua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_ShangGua.Designer.cs">
+      <DependentUpon>Frm_ShangGua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_ChaXunYiFu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_ChaXunYiFu.Designer.cs">
+      <DependentUpon>Frm_ChaXunYiFu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_DengLu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DengLu.Designer.cs">
+      <DependentUpon>Frm_DengLu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_QuYiJeDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_QuYiJeDan.Designer.cs">
+      <DependentUpon>Frm_QuYiJeDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_FanHuiChongXi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_FanHuiChongXi.Designer.cs">
+      <DependentUpon>Frm_FanHuiChongXi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\HuiYuanZongYeMian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\HuiYuanZongYeMian.Designer.cs">
+      <DependentUpon>HuiYuanZongYeMian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_HuiYuanChongZhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_HuiYuanChongZhi.Designer.cs">
+      <DependentUpon>Frm_HuiYuanChongZhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="已完成\Frm_LingQuYiFu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="已完成\Frm_LingQuYiFu.Designer.cs">
+      <DependentUpon>Frm_LingQuYiFu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShouYi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShouYi.Designer.cs">
+      <DependentUpon>Frm_ShouYi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TianJiaHuiYuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TianJiaHuiYuan.Designer.cs">
+      <DependentUpon>Frm_TianJiaHuiYuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TianJiaYiFu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TianJiaYiFu.Designer.cs">
+      <DependentUpon>Frm_TianJiaYiFu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_XiTongSheZhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_XiTongSheZhi.Designer.cs">
+      <DependentUpon>Frm_XiTongSheZhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_XiYiZongChuangTics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_XiYiZongChuangTics.Designer.cs">
+      <DependentUpon>Frm_XiYiZongChuangTics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_gongziguanli.resx">
+      <DependentUpon>Frm_gongziguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HuiShengJi.resx">
+      <DependentUpon>Frm_HuiShengJi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HuiYuanTuiKuan.resx">
+      <DependentUpon>Frm_HuiYuanTuiKuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SuoPing.resx">
+      <DependentUpon>Frm_SuoPing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_tianjiayuangong.resx">
+      <DependentUpon>Frm_tianjiayuangong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TongJi.resx">
+      <DependentUpon>Frm_TongJi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_yuangongguanli.resx">
+      <DependentUpon>Frm_yuangongguanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_XiuGaiHui.resx">
+      <DependentUpon>Frm_XiuGaiHui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_CeXiaoShanChu.resx">
+      <DependentUpon>Frm_CeXiaoShanChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_ShangGua.resx">
+      <DependentUpon>Frm_ShangGua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_ChaXunYiFu.resx">
+      <DependentUpon>Frm_ChaXunYiFu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DengLu.resx">
+      <DependentUpon>Frm_DengLu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_QuYiJeDan.resx">
+      <DependentUpon>Frm_QuYiJeDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_FanHuiChongXi.resx">
+      <DependentUpon>Frm_FanHuiChongXi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\HuiYuanZongYeMian.resx">
+      <DependentUpon>HuiYuanZongYeMian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_HuiYuanChongZhi.resx">
+      <DependentUpon>Frm_HuiYuanChongZhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="已完成\Frm_LingQuYiFu.resx">
+      <DependentUpon>Frm_LingQuYiFu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ShouYi.resx">
+      <DependentUpon>Frm_ShouYi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TianJiaHuiYuan.resx">
+      <DependentUpon>Frm_TianJiaHuiYuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TianJiaYiFu.resx">
+      <DependentUpon>Frm_TianJiaYiFu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_XiTongSheZhi.resx">
+      <DependentUpon>Frm_XiTongSheZhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_XiYiZongChuangTics.resx">
+      <DependentUpon>Frm_XiYiZongChuangTics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="未完成\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
