@@ -1,7 +1,7 @@
 # 速达快递 和 小飞洗衣店
 
 #### 介绍
- - **当时学习C#时的WinForm练习项目** 
+ - **当时学习C#时的WinForm练习项目** 【很久了】
 
 #### 使用技术
 - 开发工具：Microsoft Visual Studio。
